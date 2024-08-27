@@ -1,7 +1,6 @@
 body {
   margin: 0;
-  width: 100vw;
-  height: 100vh;
+  background-color: #0e0e0e;
   font-family: "Roboto", sans-serif;
 }
 
@@ -63,12 +62,12 @@ body {
 }
 
 .navbar-right {
-  width: 20%;
+  max-width: 30%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: stretch;
+  align-items: center;
 }
 
 .navbar-dark-toggle {
@@ -104,7 +103,7 @@ body {
 }
 
 .navbar-download-vscode{
-  min-width: 30%;
+  min-width: 35%;
   font-weight: 600;
   font-size: 1.1rem;
   padding: 4px;
@@ -122,10 +121,6 @@ body {
   background-color: #0078d4;
 }
 
-.main {
-  background-color: #0e0e0e;
-}
-
 .hero-content {
   min-height: 45%;
   background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
@@ -133,6 +128,7 @@ body {
   grid-template-columns: 45% 55%;
   color: #e9eaeb;
   border-bottom: rgba(255, 255, 255, 0.12);
+  padding: 4rem;
 }
 
 .panel-text-float-container {
@@ -154,8 +150,8 @@ body {
 }
 
 .panel-image {
-  width: 63.63%;
-  border: 0;
+  max-width: 63.63%;
+  border: none;
 }
 
 .free-tagline {
