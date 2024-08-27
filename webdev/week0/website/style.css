@@ -18,7 +18,8 @@ body {
   flex-wrap: nowrap;
   justify-content: space-around;
   align-items: center;
-  height: 5%;
+  min-height: 5%;
+  max-height: 12%;
   font-size: 1.2em;
   background: #0e0e0e;
 }
@@ -27,14 +28,16 @@ body {
   color: #e9eaeb;
   font-weight: bolder;
   text-decoration: none;
-  font-size: 1.4em;
-  margin-right: 1rem;
+  font-size: 1.3em;
+  margin-right: 2rem;
+  align-self: flex-end;
+  padding: 0;
 }
 
 .navbar-logo {
-  width: 25px;
+  width: 2.2%;
   height: auto;
-  margin-right: 0.25rem;
+  margin-right: 0.3rem;
   align-self: center;
 }
 
@@ -42,52 +45,79 @@ body {
   color: #9ba3b4;
   text-decoration: none;
   margin-right: 1rem;
+  align-self: flex-end;
+}
+
+.navbar-left-menu-element:hover {
+  color: #e9eaeb; 
 }
 
 .navbar-left {
   min-width: 40%;
+  max-width: 65%;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
-
+  align-items: flex-start;
 }
 
 .navbar-right {
   width: 20%;
-  border: 1px solid red;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
-  
-    
+  align-items: stretch;
 }
 
 .navbar-dark-toggle {
-  border: 1px solid red;
-  min-width: 25px;
+  min-width: 7.5%;
   height: auto;
+  border-radius: 5px;
+  padding: 2px;
+}
+
+.navbar-dark-toggle:hover {
+  background: rgba(255, 255, 255, 0.10);
 }
 
 .navbar-search-docs {
-  border: none;
   -webkit-appearance: none;
-  -ms-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background: rgba(0, 0, 0, 0);
-  padding: 12px;
-  border-radius: 3px;
-  outline: none:
-  height: 15px;
+  border-radius: 4px;
+  padding: 6px;
+  min-width: 55%;
+  background: none;
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #9ba3b4;
+  margin: 0 3%;
 }
 
-.navbar-search-docs::placeholder {
+.navbar-search-docs:focus {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: 1px solid #0078d4;
 }
 
 .navbar-download-vscode{
-  border: 1px solid red;
+  min-width: 30%;
+  font-weight: 600;
+  font-size: 1.2rem;
+  padding: 4px;
+  border: none;
+  border-radius: 4px;
+  background: #0078d4;
+  color: #fff;
+}
+
+.navbar-download-vscode:hover {
+  background-color: #0068b9; 
+}
+
+.navbar-download-vscode:active {
+  background-color: #0078d4;
 }
