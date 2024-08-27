@@ -106,7 +106,7 @@ body {
 .navbar-download-vscode{
   min-width: 30%;
   font-weight: 600;
-  font-size: 1.2rem;
+  font-size: 1.1rem;
   padding: 4px;
   border: none;
   border-radius: 4px;
@@ -120,4 +120,102 @@ body {
 
 .navbar-download-vscode:active {
   background-color: #0078d4;
+}
+
+.main {
+  background-color: #0e0e0e;
+}
+
+.hero-content {
+  min-height: 45%;
+  background: linear-gradient(180deg, #0e0e0e 0%, #141414 100%);
+  display: grid;
+  grid-template-columns: 45% 55%;
+  color: #e9eaeb;
+  border-bottom: rgba(255, 255, 255, 0.12);;
+}
+
+.hero-text-float-container {
+  width: 55.55%;
+}
+
+.hero-text-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.hero-image-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.hero-image {
+  width: 63.63%;
+  border: 0;
+}
+
+.free-tagline {
+  background: rgba(255, 255, 255, 0.04);
+  border-radius: 32px;
+  color: #9ba3b4;
+  font-size: 14px;
+  font-weight: 600;
+  border: 1px solid rgba(255, 255, 255, 0.07);
+  padding: 8px 12px;
+  margin-bottom: 8px;
+  width: max-content;
+}
+
+.main-tagline {
+  font-size: 4rem;
+  color: #e9eaeb;
+  letter-spacing: -0.4px;
+}
+
+.download-vscode-button {
+  min-width: 40%;
+  font-weight: 700;
+  font-size: 1rem;
+  margin: 10px auto;
+  padding: 18px;
+  border: none;
+  border-radius: 4px;
+  background: #0078d4;
+  color: #fff;
+  margin-bottom: 2rem;
+}
+
+.download-vscode-button:hover {
+  background-color: #0068b9; 
+}
+
+.download-vscode-button:active {
+  background-color: #0078d4;
+}
+
+.download-links {
+  font-size: 15px;
+  font-weight: 500;
+  color: #9ba3b4;
+  margin-bottom: 0.5rem;
+}
+
+.download-link {
+  color: #4daafc;
+  text-decoration: underline;
+}
+
+.privacy-statement {
+  font-size: 13px;
+  color: #9ba3b4;
+  font-weight: 500;
+}
+
+.privacy-statement-link {
+  color: #4daafc;
+  text-decoration: underline;
 }
